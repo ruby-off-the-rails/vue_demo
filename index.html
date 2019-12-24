@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vue.js Intro</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+  <div id="app">
+    <p>numbers: {{ numbers }}</p>
+    <p>sum: {{ computedNumbers }}</p>
+    <button v-on:click="findSumOfNumbers()">find the sum</button>
+    <input type="text" v-model="newNumber">
+    <button v-on:click="addNumber()"></button>
+
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
